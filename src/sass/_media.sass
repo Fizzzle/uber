@@ -17,6 +17,33 @@
         &__descr
             width: 300px
 
+    .mobile
+        &__item
+            font-size: 22px
+            width: 290px
+    .car
+        padding: 55px 0
+        min-height: 800px
+    .require
+        br
+            display: none
+
+    .footer
+        &__wrapper > div
+            width: 50%
+            &:nth-child(1)
+                width: 25%
+            &:nth-child(3)
+                width: 25%
+                display: flex
+                justify-content: flex-end
+        &__mobile
+            display: flex
+            a
+                margin: 0 3px
+                img
+                    width: 100%
+
 @media (max-width: 991px)
     .menu
         &__item
@@ -46,10 +73,52 @@
         &__block
             flex-direction: column
             align-items: center
+        &__round
+            margin-right: 0
         &__descr
+            width: 300px
             margin-top: 20px
+    .car
+        padding: 50px 0
+        min-height: 750px
+        &__img
+            width: 100%
+    .require
+        padding: 50px 0
+        &__block
+            margin: 20px 0
+        br
+            display: none
+    .map
+        padding: 40px 0
+        min-height: 650px
+    footer
+        padding: 10px 0 20px 0
+    .footer
+        &__wrapper
+            padding-top: 20px
+            flex-wrap: wrap
+        &__wrapper > div
+            width: 100%
+            display: flex
+            justify-content: center
+            margin-bottom: 20px
+            &:nth-child(1)
+                width: 100%
+            &:nth-child(3)
+                margin-top: 40px
+                width: 100%
+                justify-content: center
+        &__links
+            top: 65px
+            &-lang
+                margin-top: 55px
 
 @media (max-width: 767px)
+    .hidden320
+        display: block
+    .title
+        margin-top: 25px
     .menu
         position: fixed
         flex-direction: column
@@ -118,12 +187,24 @@
     .promo
         &__header
             line-height: 45px
+    .reasons
+        padding: 40px 0
+        &__descr
+            width: 350px
+        &__subtitle
+            align-content: center
+        &__text
+            margin-top: 10px
 
 @media (max-width: 575px)
     nav
         height: 30px
     header
         height: 30px
+    .title
+        font-size: 16px
+        line-height: 16px
+        margin-top: 15px
     .subheader
         top: 30px
         height: 60px
@@ -176,8 +257,50 @@
         &__subtitle
             font-size: 16px
             align-items: center
+    .mobile
+        padding: 25px 0 43px 0
+        &__item
+            min-height: 254px
+            padding: 81px 40px 0 40px
+            margin-bottom: 30px
+            &-subtitle
+                font-size: 18px
+                line-height: 31px
+            &-plus
+                bottom: 21px
 
-    .title
-        font-size: 16px
-        margin-top: 15px
-        line-height: 16px
+    .car
+        padding: 25px 0 31px 0
+        min-height: 393px
+        background: #070716
+        background-color: #070716
+        &__img
+            padding: 34 0
+        &__descr
+            display: block
+            color: #fff
+        .black
+            display: none
+    .hidden320
+        display: none
+
+    .require
+        padding: 22px 0 30px 0
+        &__block
+            margin: 30px 0 0 0
+        &__title
+            font-size: 16px
+            line-height: 24px
+            margin-left: 16px
+        &__list
+            padding-left: 30px
+            margin-top: 5px
+            li
+                font-size: 14px
+                line-height: 20px
+                margin-bottom: 5px
+        &_descr
+            margin-top: 15px
+            font-size: 14px
+
+    .map
