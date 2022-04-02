@@ -223,6 +223,8 @@
             height: 22px
             font-size: 10px
             margin-top: 6px
+            &:hover
+                background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
     .promo
         min-height: 400px
         padding: 93px 0 35px 0
@@ -241,9 +243,16 @@
             width: 210px
             height: 50px
             margin-top: 72px
+            &:hover
+                background-image: linear-gradient(to top, #1eacc7, #4ce2ff)
     .menu
         width: 85%
-
+        &__item
+            width: 100%
+            text-align: center
+            padding: 5px 0
+        &__link
+            display: block
     .reasons
         padding: 22px 0 36px 0
         &__block
@@ -304,3 +313,46 @@
             font-size: 14px
 
     .map
+        min-height: 360px
+        padding: 26px 0 29px 0
+        .title
+            font-size: 16px
+        .subtitle
+            margin-top: 11px
+            font-size: 14px
+        &__link
+            bottom: 29px
+
+    footer
+        padding: 24px 0 29px 0
+    .footer
+        &_divider
+            width: 253px
+            margin: 0 auto
+        &__wrapper
+            padding-top: 22px
+        &__wrapper > div
+            &:nth-child(1)
+                order: 2
+            &:nth-child(2)
+                order: 1
+            &:nth-child(3)
+                margin-top: 0px
+                margin-bottom: 0
+                order: 3
+        &__links
+            top: 21px
+            width: 290px
+            &-main
+                padding: 0
+                font-size: 14px
+            &-sub
+                justify-content: center
+                flex-wrap: wrap
+                a
+                    margin: 0 7px
+            &-lang
+                margin-top: 10px
+        &__social
+            margin-top: 90px
+        &__mobile
