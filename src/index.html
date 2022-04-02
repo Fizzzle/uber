@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Uber</title>
+  <link rel="shortcut icon" href="./icons/favicon.ico" type="image/x-icon">
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./css/bootstrap-reboot.min.css">
   <link rel="stylesheet" href="./css/bootstrap-grid.min.css">
@@ -20,39 +21,46 @@
       <div class="container">
         <ul class="menu">
           <li class="menu__item"><a href="#" class="menu__link">Главная</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">Со своим автомобилем</a></li>
-          <li class="menu__item"><a href="#" class="menu__link">На автомобиле компании</a></li>
+          <li class="menu__item"><a href="#require" class="menu__link">Со своим автомобилем</a></li>
+          <li class="menu__item"><a href="#require" class="menu__link">На автомобиле компании</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Требования</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Контакты</a></li>
           <li class="menu__item"><a href="#" class="menu__link">Оставить заявку</a></li>
         </ul>
       </div>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </nav>
     <div class="subheader">
       <div class="container">
         <div class="row">
-          <div class="col-md-4 offset-md-1">
+          <div class="col-6 col-md-4 offset-md-1">
             <a href="#" class="subheader__logo"><img src="./img/uber777.png" alt="logo"></a>
             <div class="subheader__official">Официальный партнер Uber в москве</div>
           </div>
 
-          <div class="col-md-2 offset-md-2">
+          <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
             <div class="subheader__call">Звоните нам ежедневно</div>
             <a href="phone:+784957970988" class="subheader__number">8 495 797 09 88</a>
           </div>
 
-          <div class="col-md-2">
+          <div class="col-6 col-md-3">
+            <a href="phone:+784957970988" class="xs-visible subheader__number">8 495 797 09 88</a>
             <button class="subheader__btn">заказать звонок</button>
           </div>
         </div>
       </div>
+
     </div>
   </header>
 
   <section class="promo">
     <div class="container">
       <div class="row">
-        <div class="col-md-10 offset-md-1">
+        <div class="col-md-12 offset-md-0 col-lg-10 offset-lg-1">
           <h1 class="promo__header">КОМПАНИЯ UBER PARTNERS!</h1>
           <h2 class="promo__subheader">ПРИГЛАШАЕМ ВОДИТЕЛЕЙ! НА СВОЕМ АВТО!</h2>
           <div class="promo__descr">Компания UBER динамически развивающаяся. Компания на рынке занимает
@@ -258,7 +266,7 @@
     </div>
   </section>
 
-  <section class="require">
+  <section class="require" id="require">
     <div class="container">
       <div class="label">Возможности</div>
       <div class="title">условия и требования</div>
@@ -371,6 +379,8 @@
       </div>
     </div>
   </footer>
+
+  <script src="../src/js/script.js"></script>
 </body>
 
 </html>

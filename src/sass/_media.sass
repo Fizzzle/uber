@@ -1,0 +1,183 @@
+@media (max-width: 1200px)
+    .menu
+        &__item
+            padding-right: 20px
+        &__link
+            font-size: 13px
+
+    .promo
+        &__header
+            font-size: 50px
+
+    .reasons
+        &__block
+            align-items: flex-start
+        &__round
+            margin-right: 0
+        &__descr
+            width: 300px
+
+@media (max-width: 991px)
+    .menu
+        &__item
+            padding-right: 8px
+        &__link
+            font-size: 10px
+    .subheader
+        &__logo
+            img
+                width: 100%
+        &__official
+            font-size: 11px
+        &__number
+            font-size: 18px
+        &__btn
+            width: 100%
+            height: 40px
+            margin-top: 21px
+
+    .promo
+        &__header
+            font-size: 40px
+        &__subheader
+            font-size: 30px
+
+    .reasons
+        &__block
+            flex-direction: column
+            align-items: center
+        &__descr
+            margin-top: 20px
+
+@media (max-width: 767px)
+    .menu
+        position: fixed
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        top: 0
+        left: -100%
+        width: 50%
+        height: 100vh
+        padding: 20px 15px
+        background-color: rgba(0,0,0,.8 )
+        transition: .6s all
+        &-active
+            left: 0
+        &__item
+            padding-right: 0
+            border: none
+            margin: 10px 0
+        &__link
+            font-size: 20px
+
+    .hamburger
+        display: block
+        position: absolute
+        right: 10px
+        top: 50%
+        transform: translateY(-50%)
+        width: 26px
+        height: 12px
+        span
+            display: block
+            height: 2px
+            width: 100%
+            background-color: white
+            margin-bottom: 2px
+            transition: .5s all
+        &-active
+            span
+                margin-bottom: -2px
+                &:nth-child(1)
+                    transform: translateY(3px) rotate(-45deg)
+                &:nth-child(2)
+                    display: none
+                &:nth-child(3)
+                    transform: translateY(3px) rotate(45deg)
+    .xs-hidden
+        display: none
+    .xs-visible
+        display: block
+
+    .subheader
+        &__number
+            display: block
+            margin-top: 10px
+            color: #fff
+            font-size: 16px
+            font-weight: 400
+            text-transform: uppercase
+            text-align: center
+        &__btn
+            display: block
+            width: 200px
+            height: 40px
+            margin: 0 auto
+            margin-top: 10px
+    .promo
+        &__header
+            line-height: 45px
+
+@media (max-width: 575px)
+    nav
+        height: 30px
+    header
+        height: 30px
+    .subheader
+        top: 30px
+        height: 60px
+        &__official
+            display: none
+        &__logo
+            margin-top: 16px
+        &__number
+            color: #fff
+            font-size: 12px
+            font-weight: 400
+            text-transofrm: uppercase
+            margin-top: 11px
+        &__btn
+            width: 110px
+            height: 22px
+            font-size: 10px
+            margin-top: 6px
+    .promo
+        min-height: 400px
+        padding: 93px 0 35px 0
+        &__descr
+            display: none
+        &__header
+            font-size: 30px
+            line-height: 35px
+            padding: 0 24px
+        &__subheader
+            font-size: 20px
+            margin-top: 33px
+            line-height: 30px
+            padding: 0 10px
+        &__btn
+            width: 210px
+            height: 50px
+            margin-top: 72px
+    .menu
+        width: 85%
+
+    .reasons
+        padding: 22px 0 36px 0
+        &__block
+            margin-top: 26px
+        &__round
+            width: 100px
+            height: 100px
+        &__descr
+            width: 100%
+            margin-top: 27px
+        &__subtitle
+            font-size: 16px
+            align-items: center
+
+    .title
+        font-size: 16px
+        margin-top: 15px
+        line-height: 16px
